@@ -1,0 +1,84 @@
+
+public class FitzHughNagumo {
+
+    // ==========================================
+    // 1. MODEL PARAMETERS
+    // ==========================================
+
+    static double a = 0.7;
+    static double b = 0.8;
+    static double epsilon = 0.08;
+    static double I = 0.5;
+
+
+    // ==========================================
+    // 2. DIFFERENTIAL EQUATIONS
+    // ==========================================
+
+    // Calculate dv/dt
+    public static double dvdt(double v, double w) {
+
+        // TODO: Implement the membrane potential equation
+
+        return 0.0;
+    }
+
+
+    // Calculate dw/dt
+    public static double dwdt(double v, double w) {
+
+        // TODO: Implement the recovery variable equation
+
+        return 0.0;
+    }
+
+
+    // ==========================================
+    // 3. INITIAL CONDITIONS
+    // ==========================================
+
+    public static void main(String[] args) {
+
+        double v = -1.0;  // Initial membrane potential
+        double w = -0.5;  // Initial recovery variable
+
+
+        // ==========================================
+        // 4. SIMULATION SETTINGS
+        // ==========================================
+
+        double tStart = 0.0;
+        double tEnd = 200.0;
+        double dt = 0.01;
+
+        int steps = (int) ((tEnd - tStart) / dt);
+
+
+        // ==========================================
+        // 5. NUMERICAL INTEGRATION
+        // ==========================================
+
+        // TODO: Create arrays to store:
+        // - Time
+        // - Membrane potential (v)
+        // - Recovery variable (w)
+
+        for (int i = 0; i < steps; i++) {
+
+            // TODO: Calculate dv/dt and dw/dt
+
+            // TODO: Update v and w using Euler's method
+
+            // TODO: Store the new values
+        }
+
+
+        // ==========================================
+        // 6. DATA OUTPUT
+        // ==========================================
+
+        // TODO: Print or export simulation results
+        // Consider CSV format for future graphing.
+
+    }
+}
